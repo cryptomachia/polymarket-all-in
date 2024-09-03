@@ -2,7 +2,7 @@
 
 ## Overview
 
-This script fetches all available YES/NO binary active markets with uncertain prediction outcomes on Polymarket. It calculates the average risk-reward ratio and cumulative expected value for betting in a single direction, based on the minimum order size allowed. The outcomes are considered uncertain if the price is greater than 0.001 and less than 1, meaning the probability of either the YES or NO bet (depending on the strategy chosen) is greater than 0.1% and less than 100%, ensuring non-trivial outcomes.
+This script fetches all available YES/NO binary active markets with uncertain prediction outcomes on Polymarket. It calculates the average risk-reward ratio and cumulative expected value for betting in a single direction, based on the minimum order size allowed. The outcomes are considered uncertain if the price is greater than 0.001 and less than 1, meaning the probability of either the YES or NO bet (depending on the strategy chosen) is greater than 0.1% and less than 100%, ensuring non-trivial outcomes. create_order, post_order, get_price from the polymarket CLOB api require level two (API based) authentication, while other public endpoints can be retrieved through private key authentication like get_order_book_liquidity
 
 ### Trading Strategies
 
